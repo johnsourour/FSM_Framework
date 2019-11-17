@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/johnsourour/FSM_Framework.svg?token=yyTsrjUnkBzUgvDcjdnD&branch=master)](https://travis-ci.com/johnsourour/FSM_Framework)
+[![Build Status](https://travis-ci.com/johnsourour/FSM_Framework.svg?branch=master)](https://travis-ci.com/johnsourour/FSM_Framework)
 <br />
 
 # FSM Framework
