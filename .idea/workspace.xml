@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c834f71e-2c95-45ec-b3e9-2e5ad0d141f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ActionGo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameOfLife.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameOfLifeCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameOfLifeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ToggleCellColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FSM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FSM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FSM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UnitTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UnitTesting.class" afterDir="false" />
-    </list>
+    <list default="true" id="c834f71e-2c95-45ec-b3e9-2e5ad0d141f3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574012478558</updated>
       <workItem from="1574012481785" duration="4482000" />
-      <workItem from="1574428202922" duration="13032000" />
+      <workItem from="1574428202922" duration="13331000" />
     </task>
     <servers />
   </component>
