@@ -43,21 +43,6 @@ public class ToggleCellColor extends Action {
         int[][] grid = (int[][]) d.getVariable("prev_grid");
         int[][] grid2 = (int[][]) d.getVariable("grid");
         int cur = grid[posX][posY];
-//        System.out.println(posX+" "+posY);
-//        for(int i=0; i<=ex; i++) {
-//            for(int j=0; j<=ey; j++){
-//                System.out.print(Integer.toString(grid[i][j])+" ");
-//
-//            }
-//            System.out.println("");
-//        }
-//        for(int i=0; i<=ex; i++) {
-//            for(int j=0; j<=ey; j++){
-//                System.out.print(Integer.toString(grid2[i][j])+" ");
-//
-//            }
-//            System.out.println("");
-//        }
         int count = countAliveAround(sx, sy, ex, ey, posX, posY, grid);
         Integer alive;
         if (cur == ALIVE) {

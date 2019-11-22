@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c834f71e-2c95-45ec-b3e9-2e5ad0d141f3" name="Default Changelist" comment="" />
+    <list default="true" id="c834f71e-2c95-45ec-b3e9-2e5ad0d141f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToggleCellColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToggleCellColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GameOfLife.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GameOfLife.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GameOfLifeCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GameOfLifeCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ToggleCellColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ToggleCellColor.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GameOfLifeTest">
+  <component name="RunManager" selected="JUnit.UnitTesting">
     <configuration name="GameOfLifeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GameOfLifeTest" />
       <module name="FSM_Framework" />
@@ -108,10 +114,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UnitTesting" />
         <item itemvalue="Application.GameOfLifeTest" />
         <item itemvalue="JUnit.GameOfLifeTest.run" />
         <item itemvalue="JUnit.UnitTesting.twoStatesTwoPrints" />
-        <item itemvalue="JUnit.UnitTesting" />
         <item itemvalue="JUnit.UnitTesting.addState" />
       </list>
     </recent_temporary>
@@ -127,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574012478558</updated>
       <workItem from="1574012481785" duration="4482000" />
-      <workItem from="1574428202922" duration="13331000" />
+      <workItem from="1574428202922" duration="13551000" />
     </task>
     <servers />
   </component>
