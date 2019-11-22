@@ -1,10 +1,8 @@
 public class Transition {
 
     private State destination;
-    private String result;
 
-    Transition(State dest, String res) {
-        result = res;
+    Transition(State dest) {
         destination = dest;
     }
 
@@ -12,7 +10,4 @@ public class Transition {
         return destination;
     }
 
-    public String getResult() {
-        return result;
-    }
 }

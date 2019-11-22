@@ -26,7 +26,7 @@ by defining several states, transitions and actions.
  * Action:
     This class defined the Action on the Data that will be executed inside each state
  
- ###### Note:  Action, Data and State may be defined as interfaces to be implemented for each type of the specific interface
+ ###### Note:  Action is defined as an abstract class for the user to implemented custom actions for his state
   
     
  #### Testing
