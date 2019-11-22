@@ -12,13 +12,10 @@ public class Data {
         vars.put(name, val);
     }
 
-    public boolean changeVariable(String name, Object val) {
-        if (vars.containsKey(name)) {
-            vars.replace(name, val);
-            return true;
-        }
-        return false;
+    public void changeVariable(String name, Object val) {
+        addVariable(name, val);
     }
+
 
     public void removeVariable(String name) {
         vars.remove(name);
