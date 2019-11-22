@@ -31,7 +31,9 @@ by defining several states, transitions and actions.
     
  #### Testing
  
- To test this framework, one or more application will be implemented. (e.g: vending machine, poker game)
+ To test this framework, two set of tests are going to be applied:
+  * Unit Testing; test for as much as possible of the functions of the FSM class
+  * [Conway's Game Of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) simulator
 
 
 

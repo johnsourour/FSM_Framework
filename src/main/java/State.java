@@ -55,10 +55,6 @@ public class State {
 
     public Transition run() {
         String res = action.execute(data);
-        if (!transitionMap.containsKey(res)) {
-            System.out.println("invalid transition result");
-            return null;
-        }
         return transitionMap.get(res);
     }
 

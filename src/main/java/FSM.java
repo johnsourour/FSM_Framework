@@ -17,6 +17,10 @@ public class FSM {
         data.addVariable(name, value);
     }
 
+    public Object getVariable(String name) {
+        return data.getVariable(name);
+    }
+
     public boolean changeVariableValue(String name, Object value) {
         return data.changeVariable(name, value);
     }
@@ -38,8 +42,12 @@ public class FSM {
         statesMap.put(name, state);
     }
 
-    public void removeState(String name) {
+    public boolean removeState(String name) {
+        if(!statesMap.containsKey(name)){
+            return false;
+        }
         statesMap.remove(name);
+        return true;
     }
 
     /** add Transition from srcState to destState.
@@ -73,16 +81,24 @@ public class FSM {
         return true;
     }
 
-    public void setStateAction(String stateName,
+    public boolean setStateAction(String stateName,
                                Action action,
                                String actionName) {
         State state = statesMap.get(stateName);
+        if(state == null) {
+            return false;
+        }
         state.setAction(action);
+        return true;
     }
 
-    public void removeStateAction(String stateName, String actionName) {
+    public boolean removeStateAction(String stateName, String actionName) {
         State state = statesMap.get(stateName);
+        if(state == null) {
+            return false;
+        }
         state.removeAction();
+        return true;
     }
 
     public boolean run() {
@@ -97,11 +113,14 @@ public class FSM {
         State curState = statesMap.get(initState);
         State stopState = statesMap.get(endState);
 
-        while (curState.getStateId() != stopState.getStateId()) {
+        while (true) {
             System.out.println("State: " + curState.getStateName());
             Transition nextTransition = curState.run();
             if (nextTransition == null) {
                 return false;
+            }
+            if(curState.getStateId() == stopState.getStateId()) {
+                break;
             }
             curState = nextTransition.getDestination();
         }
