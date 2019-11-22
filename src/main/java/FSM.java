@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class FSM {
@@ -15,15 +13,15 @@ public class FSM {
         data = new Data();
     }
 
-    public void addVariable(String name, Object value){
+    public void addVariable(String name, Object value) {
         data.addVariable(name, value);
     }
 
-    public boolean changeVariableValue(String name, Object value){
+    public boolean changeVariableValue(String name, Object value) {
         return data.changeVariable(name, value);
     }
 
-    public void removeVariable(String name){
+    public void removeVariable(String name) {
         data.removeVariable(name);
     }
 
@@ -44,12 +42,17 @@ public class FSM {
         statesMap.remove(name);
     }
 
-    public boolean addStateTransition(String srcState, String destState, String transitionName) {
-        if(!statesMap.containsKey(srcState)){
+    /** add Transition from srcState to destState.
+     * Both must be added using AddState method before calling this method
+     */
+    public boolean addStateTransition(String srcState,
+                                      String destState,
+                                      String transitionName) {
+        if (!statesMap.containsKey(srcState)) {
             System.out.println("srcState not found, add first");
             return false;
         }
-        if(!statesMap.containsKey(destState)){
+        if (!statesMap.containsKey(destState)) {
             System.out.println("destState not found, add first");
             return false;
         }
@@ -60,8 +63,9 @@ public class FSM {
         return true;
     }
 
-    public boolean removeStateTransition(String stateName, String transitionName) {
-        if(!statesMap.containsKey(stateName)){
+    public boolean removeStateTransition(String stateName,
+                                         String transitionName) {
+        if (!statesMap.containsKey(stateName)) {
             return false;
         }
         State state = statesMap.get(stateName);
@@ -69,7 +73,9 @@ public class FSM {
         return true;
     }
 
-    public void setStateAction(String stateName, Action action, String actionName) {
+    public void setStateAction(String stateName,
+                               Action action,
+                               String actionName) {
         State state = statesMap.get(stateName);
         state.setAction(action);
     }
@@ -80,21 +86,21 @@ public class FSM {
     }
 
     public boolean run() {
-        if(initState == null ){
+        if (initState == null) {
             System.out.println("Initial State not set");
             return false;
         }
-        if(endState == null) {
+        if (endState == null) {
             System.out.println("End State not set");
             return false;
         }
         State curState = statesMap.get(initState);
         State stopState = statesMap.get(endState);
 
-        while(curState.getStateId()!=stopState.getStateId()) {
-            System.out.println("State: "+curState.getStateName());
+        while (curState.getStateId() != stopState.getStateId()) {
+            System.out.println("State: " + curState.getStateName());
             Transition nextTransition = curState.run();
-            if(nextTransition == null) {
+            if (nextTransition == null) {
                 return false;
             }
             curState = nextTransition.getDestination();

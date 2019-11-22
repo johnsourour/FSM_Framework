@@ -3,5 +3,6 @@ public abstract class Action {
     Action(String actionName) {
         name = actionName;
     }
-    public abstract String execute(Data d); //returns result of Action for transition
+    //returns result of Action for the next transition
+    public abstract String execute(Data d);
 }

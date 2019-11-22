@@ -3,9 +3,11 @@ import java.util.Map;
 
 public class State {
     private static int ids = 0;
+    // unique id for each state
     private int stateId;
     private Map<String, Transition> transitionMap;
-    private Action action; //action of the state
+    //customized action of the state
+    private Action action;
     private Data data;
     private String stateName;
 
@@ -53,7 +55,7 @@ public class State {
 
     public Transition run() {
         String res = action.execute(data);
-        if(!transitionMap.containsKey(res)){
+        if (!transitionMap.containsKey(res)) {
             System.out.println("invalid transition result");
             return null;
         }

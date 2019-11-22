@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c834f71e-2c95-45ec-b3e9-2e5ad0d141f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Action.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FSM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Transition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transition.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574012478558</updated>
       <workItem from="1574012481785" duration="4482000" />
-      <workItem from="1574428202922" duration="2866000" />
+      <workItem from="1574428202922" duration="3494000" />
     </task>
     <servers />
   </component>
